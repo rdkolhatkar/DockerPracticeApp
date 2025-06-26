@@ -1,0 +1,14 @@
+{
+  "name": "GetPersonDetailsAPI",
+  "version": "1.0.0",
+  "description": "Docker Training",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ratnakar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

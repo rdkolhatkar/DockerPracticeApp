@@ -1,0 +1,18 @@
+  Important commands for creating and running the sample node js API application  
+  1) npm init
+  2) npm i express
+  3) node application.js
+  4) APP_BASE_URL: http://localhost:9091/application/test/data
+  ---------------------------------------------------------------------------------
+  Commands for Docker
+  1) touch dockerfile -> to create the new docker file inside your project
+  ---------------------------------------------------------------------------------
+  Building Docker image in the container
+  1) cd GetPersonDetailsAPI/
+  2) cd app/
+  3) docker build -t GetPersonDetailsAPI-app .
+  ---------------------------------------------------------------------------------
+  Commands for Executing the testing.js file for Get API test
+  1) npm install mocha chai chai-http --save-dev
+  2) node app/application.js
+  2) npx mocha test/testing.js
