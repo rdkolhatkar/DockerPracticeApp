@@ -1,0 +1,5 @@
+# The names of the files or folders which we add in the '.dockerignore' file will not be utilized while building the image and running the container
+node_modules
+ImportantNotes.txt
+# Now we want to exclude the files of the specific extension like .xlsx, .xlx, .txt etc.
+*.xlsx
