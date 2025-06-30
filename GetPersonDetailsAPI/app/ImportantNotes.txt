@@ -17,3 +17,10 @@
   2) node app/application.js
   2) npx mocha test/testing.js
   ----------------------------------------------------------------------------------
+  Commands for cheking and deleting the images
+  1) docker images -> this command will give us the total number of images
+  2) docker image rm <name of the image> -> delete the specific image
+  3) docker image rm <image name> -f -> this command will delete the running images forcefully
+  4) docker ps -a -> this comand will give us the list of all containers
+  5) docker container rm <name of the container> -> delete the stale containers
+  6) docker container rm <name of the container> -f -> delete the running container forcefully
