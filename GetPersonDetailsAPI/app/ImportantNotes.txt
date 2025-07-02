@@ -24,3 +24,10 @@
   4) docker ps -a -> this comand will give us the list of all containers
   5) docker container rm <name of the container> -> delete the stale containers
   6) docker container rm <name of the container> -f -> delete the running container forcefully
+  ------------------------------------------------------------------------------------
+  Command to delete all docker containers & their images
+  1) docker system prune -a
+  -------------------------------------------------------------------------------------
+  Command to create new image version for the project
+  1) docker build -t <name of the project or image>:v2 -> in ths command :v2 is used for defining the image version
+  2) docker run --name <name of the container>-v2 -p 9091:9091 <name of the project or image>:v2 -> Here <name of the container>-v2 is the name of a different container for v2 image
