@@ -1,5 +1,7 @@
 # FROM image-name:version -> Downloading the image and installing the image of the application platform & runtime environment
-FROM node:latest 
+FROM node:latest
+# Install the 'nodemon' utility tool globally for the container using {-g nodemon}
+RUN npm install -g nodemon
 # WORKDIR /path -> Directing subsequent instructions to operate within a specified working directory
 WORKDIR /GetPersonDetailsAPI/app
 # COPY ./source ./destination -> Copy files and directories from the build context (your local machine) into the Docker image being built
@@ -9,4 +11,6 @@ RUN npm install
 # EXPOSE port -> EXPOSE in a Dockerfile serves as documentation, indicating which ports a container's application will listen on at runtime.
 EXPOSE 9091
 # CMD ["Shell Command", "Path of executable file /.sh"] ->  CMD instruction defines the default command to execute when a container is started from an image. 
-CMD ["node", "application.js"]
+# CMD ["node", "application.js"] -> old command to run the application on the Docker 
+# CMD [ "npm","run","dev" ] -> command to run the application with nodemon
+CMD [ "npm","run","dev" ]
