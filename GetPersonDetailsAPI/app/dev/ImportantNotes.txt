@@ -9,13 +9,13 @@
   ---------------------------------------------------------------------------------
   Building Docker image in the container
   1) cd GetPersonDetailsAPI/
-  2) cd app/
+  2) cd app/dev/
   3) docker build -t GetPersonDetailsAPI-app .
   ---------------------------------------------------------------------------------
   Commands for Executing the testing.js file for Get API test
   1) npm install mocha chai chai-http --save-dev
-  2) node app/application.js
-  2) npx mocha test/testing.js
+  2) node app/dev/application.js
+  2) npx mocha app/test/testing.js
   ----------------------------------------------------------------------------------
   Commands for cheking and deleting the images
   1) docker images -> this command will give us the total number of images
