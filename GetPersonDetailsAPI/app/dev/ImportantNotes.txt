@@ -43,3 +43,9 @@
   Example Command:
   docker run --name basicApplication -p 9091:9091 --rm -v C:/Users/ABC/Desktop/basicApplication:/GetPersonDetailsAPI/app basic-app
   Note: Once you run the container then do some local changes and save the local changes it will reflect automatically on the container.
+  ----------------------------------------------------------------------------------------
+  Docker compose.yaml file
+  The docker-compose.yml file serves as a configuration file for Docker Compose, a tool used to define and run multi-container Docker applications.
+  1) touch compose.yaml -> to create new compose.yaml file
+  2) docker compose up -> to run the compose.yaml file
+  ----------------------------------------------------------------------------------------

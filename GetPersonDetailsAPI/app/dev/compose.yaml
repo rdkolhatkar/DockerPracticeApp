@@ -1,0 +1,7 @@
+services:
+  img:
+    build: .
+    container_name: application-container_name
+    ports:
+      - 9091:9091
+  
