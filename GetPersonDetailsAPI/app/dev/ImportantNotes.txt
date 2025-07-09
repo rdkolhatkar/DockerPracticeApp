@@ -49,3 +49,16 @@
   1) touch compose.yaml -> to create new compose.yaml file
   2) docker compose up -> to run the compose.yaml file
   ----------------------------------------------------------------------------------------
+  Push our project image to docker hub
+  1) Create an account on docker hub platform : https://hub.docker.com/
+  2) Create a repository on the docker hub with any name
+  3) Build the project image using command: docker build -t <account name/repository name> .
+  4) Check the image details by using command: docker images
+  5) Login to the docker hub account using the command: docker Login
+  6) Push your project to docker repository with below command
+  command: docker push <account name/repository name> tagname 
+  command: docker push <image name> 
+  -----------------------------------------------------------------------------------------
+  Pull project images from the docker hub
+  1) Command: docker Login
+  2) Command: docker pull <image name>
