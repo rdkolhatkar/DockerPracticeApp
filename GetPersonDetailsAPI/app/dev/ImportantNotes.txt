@@ -62,3 +62,16 @@
   Pull project images from the docker hub
   1) Command: docker Login
   2) Command: docker pull <image name>
+  -----------------------------------------------------------------------------------------
+  Upload image on the server and run the application to go live in the production.
+  1) Go to dockerhub "https://hub.docker.com/"
+  2) Create a repository
+  3) Build image with below command to run the image on different operating systems
+  Command: docker buildx --platform=linux/amd64 -t <repository name> .
+  4) Push image to repository with below command
+  Command: docker push <imageName>
+  5) Open Play With Docker Website "https://www.docker.com/play-with-docker/"
+  6) Create account and login with docker hub
+  7) Go to Public view and enter the docker pull command on the Play With Docker Website console
+  8) Check the all images with command: docker images
+  9) Run container on Play With Docker Website using command: docker run -p 5500:5500 <image Name> 
