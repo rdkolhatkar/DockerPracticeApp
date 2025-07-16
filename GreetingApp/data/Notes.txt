@@ -1,0 +1,7 @@
+Important commands to run the application
+1) apt-get update
+2) apt-get install -y python
+3) apt-get install python-pip
+4) pip install flask
+5) Create/copy application code to -> /opt/app.py
+6) FLASK_APP=/opt/app.py flask run --host=0.0.0.0
